@@ -1,0 +1,13 @@
+.Preview {
+  &-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  &-cover,
+  &-back {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
