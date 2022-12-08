@@ -12,7 +12,7 @@
 
 .Uploader .Uploader-cta {
   color: #626b7c;
-  font-size: calc(10px + 2vmin);
+  font-size: 12px;
   display: block;
   padding: 20px;
 }
