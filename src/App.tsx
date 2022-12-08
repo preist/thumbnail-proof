@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import defaultFrontImage from "./defaultFrontImage.jpg";
-import defaultBackImage from "./defaultBackImage.jpg";
+import defaultFrontImage from "./assets/defaultFrontImage.jpg";
+import defaultBackImage from "./assets/defaultBackImage.jpg";
 import Uploader from "./Uploader";
 import Preview from "./Preview";
 

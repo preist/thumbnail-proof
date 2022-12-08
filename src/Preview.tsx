@@ -1,5 +1,6 @@
 import React from "react";
 import "./Preview.scss";
+import maskLayerImage from "./assets/maskLayerImage.png";
 
 interface PreviewProps {
   frontImage: string;
@@ -12,8 +13,15 @@ function Preview(props: PreviewProps) {
   return (
     <div className="Preview">
       <section className="Preview-container">
-        <img src={frontImage} alt="cover" className="Preview-cover" />
-        <img src={backImage} alt="back" className="Preview-back" />
+        <div className="Preview-mask">
+          <img src={maskLayerImage} alt="mask" />
+        </div>
+        <div className="Preview-cover">
+          <img src={frontImage} alt="cover" className="Preview-cover-image" />
+        </div>
+        <div className="Preview-back">
+          <img src={backImage} alt="back" className="Preview-back-image" />
+        </div>
       </section>
     </div>
   );
