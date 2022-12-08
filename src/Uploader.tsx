@@ -41,7 +41,7 @@ function Uploader(props: UploaderProps) {
     if (files.length < 2) {
       setIsDragging(false);
 
-      alert("Please upload at least two images");
+      alert("Please drag and drop at least two images...");
 
       console.log(files.length);
       console.log(files);
@@ -64,7 +64,7 @@ function Uploader(props: UploaderProps) {
       onDrop={handleDrop}
     >
       <div className="Uploader-cta">
-        Drag and drop 2 images for front and back
+        Drag and drop <strong>two images</strong> for front and back
       </div>
       <div className="Uploader-drop-cta">Drop your image here</div>
     </div>

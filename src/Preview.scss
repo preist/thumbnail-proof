@@ -31,10 +31,11 @@
   &-bend {
     perspective: 570px;
     position: absolute;
-    top: -37px;
+    top: -39px;
     left: 15.2%;
     opacity: 1;
     z-index: 3;
+    display: none;
 
     &-image {
       transform: rotateX(31deg) rotateY(20deg) scale(0.9, 0.64);
