@@ -1,0 +1,37 @@
+.Uploader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Uploader.active {
+  backdrop-filter: blur(5px) brightness(40%);
+}
+
+.Uploader .Uploader-cta {
+  color: #626b7c;
+  font-size: calc(10px + 2vmin);
+  display: block;
+  padding: 20px;
+}
+
+.Uploader.active .Uploader-cta {
+  display: none;
+}
+
+.Uploader .Uploader-drop-cta {
+  display: none;
+}
+
+.Uploader.active .Uploader-drop-cta {
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(16px + 2vmin);
+  font-weight: bold;
+}
