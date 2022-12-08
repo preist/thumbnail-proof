@@ -5,6 +5,10 @@
   height: 100vh;
   position: relative;
 
+  img {
+    filter: saturate(1.15) contrast(1.18);
+  }
+
   &-container {
     position: relative;
   }
@@ -14,11 +18,53 @@
     position: absolute;
     top: -87px;
     left: 19%;
-    z-index: 1;
+    z-index: 2;
+    opacity: 1;
 
     &-image {
       transform: rotateX(30deg) scale(1.105, 0.7);
       transform-style: preserve-3d;
+      mask-image: url(./assets/coverMask.svg);
+    }
+  }
+
+  &-bend {
+    perspective: 570px;
+    position: absolute;
+    top: -37px;
+    left: 15.2%;
+    opacity: 1;
+    z-index: 3;
+
+    &-image {
+      transform: rotateX(31deg) rotateY(20deg) scale(0.9, 0.64);
+      transform-style: preserve-3d;
+      mask-image: url(./assets/bendMask.svg);
+    }
+  }
+
+  &-spine {
+    position: absolute;
+    top: 438px;
+    left: 64px;
+    width: 56px;
+    height: 20px;
+    background-position: bottom left;
+    z-index: 0;
+    overflow: hidden;
+    perspective: 261px;
+    transform: rotate(260deg);
+    position: relative;
+
+    &-image {
+      width: 600px;
+      height: 602px;
+      object-fit: cover;
+      position: absolute;
+      transform: scaleX(-1);
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
   }
 
@@ -32,9 +78,9 @@
     z-index: 0;
 
     &-image {
-      -webkit-transform: scaleX(-1);
       transform: rotateX(30deg) scale(1.105, 0.7);
       transform-style: preserve-3d;
+      mask-image: url(./assets/backMask.svg);
     }
   }
 
@@ -44,7 +90,7 @@
     max-width: 960px;
     max-height: 540px;
     opacity: 1;
-    z-index: 5;
+    z-index: 100;
 
     img {
       max-width: 100%;

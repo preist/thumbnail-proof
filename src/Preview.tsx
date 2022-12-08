@@ -19,6 +19,12 @@ function Preview(props: PreviewProps) {
         <div className="Preview-cover">
           <img src={frontImage} alt="cover" className="Preview-cover-image" />
         </div>
+        <div className="Preview-bend">
+          <img src={frontImage} alt="cover" className="Preview-bend-image" />
+        </div>
+        <div className="Preview-spine">
+          <img src={backImage} alt="back" className="Preview-spine-image" />
+        </div>
         <div className="Preview-back">
           <img src={backImage} alt="back" className="Preview-back-image" />
         </div>
